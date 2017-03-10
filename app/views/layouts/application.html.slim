@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta (charset="UTF-8")
+    meta (name="viewport" content="width=device-width")
+    title SampleAssets
+    = stylesheet_link_tag('application')
+    = render 'partial/assets/stylesheet'
+  body
+    = yield
+    = javascript_include_tag('application')
+    = render 'partial/assets/javascript'
+    = csrf_meta_tags

@@ -1,0 +1,4 @@
+- file_name = "#{controller_path}/#{action_name}.css"
+- file_path = Rails.root.join('app', 'assets', 'stylesheets', file_name)
+- if File.exists?(file_path) || Rails.env.development?
+  = stylesheet_link_tag(file_name)

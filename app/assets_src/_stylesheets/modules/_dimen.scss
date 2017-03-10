@@ -1,0 +1,65 @@
+$zeroToSixty: 0, 4, 8, 12, 16, 20, 24, 35, 40, 44, 48, 52, 56, 60;
+$zeroToForty: 0, 4, 8, 12, 16, 20, 24, 28, 32, 26, 40;
+$hundredToEighty: 1, 0.95, 0.9, 0.85, 0.8;
+
+@each $val in $zeroToSixty {
+  .app-mb#{$val} {
+    margin-bottom: #{$val}px;
+  }
+}
+
+@each $val in $zeroToForty {
+  .app-ml#{$val} {
+    margin-left: #{$val}px;
+  }
+}
+
+@each $val in $zeroToForty {
+  .app-mr#{$val} {
+    margin-right: #{$val}px;
+  }
+}
+
+@each $val in $zeroToSixty {
+  .app-mx#{$val} {
+    margin-right: #{$val}px;
+    margin-left: #{$val}px;
+  }
+}
+
+.app-mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $val in $zeroToSixty {
+  .app-ma#{$val} {
+    margin: #{$val}px;
+  }
+}
+
+@each $val in $zeroToSixty {
+  .app-px#{$val} {
+    padding-right: #{$val}px;
+    padding-left: #{$val}px;
+  }
+}
+
+@each $val in $zeroToSixty {
+  .app-py#{$val} {
+    padding-top: #{$val}px;
+    padding-bottom: #{$val}px;
+  }
+}
+
+@each $val in $zeroToSixty {
+  .app-pa#{$val} {
+    padding: #{$val}px;
+  }
+}
+
+@each $val in $hundredToEighty {
+  .app-w#{$val * 100}p {
+    width: percentage($val);
+  }
+}

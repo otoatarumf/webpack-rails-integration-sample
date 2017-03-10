@@ -1,0 +1,4 @@
+- file_name = "#{controller_path}/#{action_name}.js"
+- file_path = Rails.root.join('app', 'assets', 'javascripts', file_name)
+- if File.exists?(file_path) || Rails.env.development?
+  = javascript_include_tag(file_name)

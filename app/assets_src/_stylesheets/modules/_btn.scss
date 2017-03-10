@@ -1,0 +1,147 @@
+// Btn
+//
+// サイト全体で汎用的に使用されるボタンを定義します。
+//
+// Styleguide 1.0
+
+// ボタン
+//
+// Markup:
+// <div>
+//   <div style="margin-bottom: 30px;">
+//     <button class="mf-btn btn-xs btn-primary">btn-xs</button>
+//     <button class="mf-btn btn-s btn-primary">btn-s</button>
+//     <button class="mf-btn btn-m btn-primary">btn-m</button>
+//     <button class="mf-btn btn-l btn-primary">btn-l</button>
+//     <button class="mf-btn btn-xl btn-primary">btn-xl</button>
+//   </div>
+//   <div style="margin-bottom: 30px;">
+//     <button class="mf-btn btn-m btn-primary">btn-primary</button>
+//     <button class="mf-btn btn-m btn-success">btn-success</button>
+//     <button class="mf-btn btn-m btn-info">btn-info</button>
+//     <button class="mf-btn btn-m btn-warn">btn-warn</button>
+//     <button class="mf-btn btn-m btn-danger">btn-danger</button>
+//   </div>
+//   <div style="margin-bottom: 30px;">
+//     <button class="mf-btn btn-m btn-primary-ghost">btn-primary</button>
+//     <button class="mf-btn btn-m btn-success-ghost">btn-success</button>
+//     <button class="mf-btn btn-m btn-info-ghost">btn-info</button>
+//     <button class="mf-btn btn-m btn-warn-ghost">btn-warn</button>
+//     <button class="mf-btn btn-m btn-danger-ghost">btn-danger</button>
+//   </div>
+// </div>
+//
+// サイズやフォントサイズは後々デザイナーさんと調整します。とりあえず構造のみ。
+//
+//
+//
+//
+// Styleguide 1.1
+
+.mf-btn {
+  border: 0;
+  border-radius: 6px;
+  color: $PFM-COLOR-WHITE;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+
+  &.btn-xs {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  &.btn-s {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  &.btn-m {
+    font-size: 14px;
+    padding: 14px 60px;
+  }
+
+  &.btn-l {
+    font-size: 20px;
+    padding: 14px 48px;
+  }
+
+  &.btn-xl {
+    font-size: 28px;
+    padding: 16px 60px;
+  }
+
+  &.btn-primary {
+    background-image: linear-gradient(to bottom, $PFM-COLOR-GRADIENT-BUTTON-PRIMARY-FROM, $PFM-COLOR-GRADIENT-BUTTON-PRIMARY-TO);
+  }
+
+  &.btn-primary-ghost {
+    background-color: transparent;
+    border: solid 1px $PFM-COLOR-ORANGE;
+    color: $PFM-COLOR-ORANGE;
+    transition: .3s;
+  }
+
+  &.btn-disabled {
+    background-color: $PFM-COLOR-LIGHT-SILVER;
+    color: $PFM-COLOR-FONT-BLACK;
+    cursor: auto;
+    opacity: .5;
+  }
+
+  &.btn-disabled-ghost {
+    background-color: transparent;
+    border: 1px solid $PFM-COLOR-LIGHT-SILVER;
+    color: $PFM-COLOR-LIGHT-SILVER;
+    cursor: auto;
+    opacity: .5;
+  }
+
+  &.btn-success {
+    background-color: $PFM-COLOR-DIM-GREEN;
+  }
+
+  &.btn-success-ghost {
+    background-color: transparent;
+    border: solid 1px $PFM-COLOR-DIM-GREEN;
+    color: $PFM-COLOR-DIM-GREEN;
+    transition: .3s;
+  }
+
+  &.btn-info {
+    background-color: $PFM-COLOR-SKY-BLUE;
+  }
+
+  &.btn-info-ghost {
+    background-color: transparent;
+    border: solid 1px $PFM-COLOR-SKY-BLUE;
+    color: $PFM-COLOR-SKY-BLUE;
+    transition: .3s;
+  }
+
+  &.btn-warn {
+    background-color: $PFM-COLOR-YELLOW;
+  }
+
+  &.btn-warn-ghost {
+    background-color: transparent;
+    border: solid 1px $PFM-COLOR-YELLOW;
+    color: $PFM-COLOR-YELLOW;
+    transition: .3s;
+
+  }
+
+  &.btn-danger {
+    background-color: $PFM-COLOR-RED;
+  }
+
+  &.btn-danger-ghost {
+    background-color: transparent;
+    border: solid 1px $PFM-COLOR-RED;
+    color: $PFM-COLOR-RED;
+    transition: .3s;
+  }
+}
+

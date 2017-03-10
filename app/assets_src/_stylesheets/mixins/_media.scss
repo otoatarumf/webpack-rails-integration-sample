@@ -1,0 +1,42 @@
+$PFM-WIDTH-PHONE-L: 414px;
+$PFM-WIDTH-TABLET-S: 600px;
+$PFM-WIDTH-TABLET-L: 767px;
+$PFM-WIDTH-PC-S: 994px;
+$PFM-WIDTH-PC-M: 1200px;
+$PFM-WIDTH-PC-L: 1600px;
+
+@mixin media-phone-l {
+  @media screen and (min-width: $PFM-WIDTH-PHONE-L) {
+    @content;
+  }
+}
+
+@mixin media-tab-s {
+  @media screen and (min-width: $PFM-WIDTH-TABLET-S) {
+    @content;
+  }
+}
+
+@mixin media-tab-l {
+  @media screen and (min-width: $PFM-WIDTH-TABLET-L) {
+    @content;
+  }
+}
+
+@mixin media-pc-s {
+  @media screen and (min-width: $PFM-WIDTH-PC-S) {
+    @content;
+  }
+}
+
+@mixin media-pc-m {
+  @media screen and (min-width: $PFM-WIDTH-PC-M) {
+    @content;
+  }
+}
+
+@mixin media-pc-l {
+  @media screen and (min-width: $PFM-WIDTH-PC-L) {
+    @content;
+  }
+}

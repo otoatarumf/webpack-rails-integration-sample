@@ -1,0 +1,42 @@
+{
+  "name": "sample_assets",
+  "version": "1.0.0",
+  "description": "Sample Assets",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node node_tasks/index.js & webpack --watch --config node_tasks/webpack.config.js",
+    "prod": "NODE_ENV=production node node_tasks/index.js & NODE_ENV=production webpack --watch --config node_tasks/webpack.config.js",
+    "styleguide": "node node_tasks/styleguide/styleguide_task.js"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-3": "^6.11.0",
+    "chalk": "^1.1.3",
+    "chokidar": "^1.6.0",
+    "fs-extra": "^0.30.0",
+    "glob": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "sc5-styleguide": "^1.5.0",
+    "webpack": "^1.13.1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,0 +1,16 @@
+.app-header {
+  align-items: center;
+  background-color: $PFM-COLOR-GREY;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.app-header-logo {
+  width: 200px;
+}
+
+.app-header-nav {
+  align-items: center;
+  justify-content: center;
+}
