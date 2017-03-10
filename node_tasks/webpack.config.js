@@ -62,7 +62,8 @@ module.exports = {
         }]
     },
     output: {
-        filename: "[name]"
+        filename: "[name]",
+        jsonpFunction: "myBundleFunction"
     },
     plugins: getPlugins()
 
