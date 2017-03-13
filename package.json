@@ -7,10 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node node_tasks/index.js & webpack --watch --config node_tasks/webpack.config.js",
-    "prod": "NODE_ENV=production node node_tasks/index.js & NODE_ENV=production webpack --watch --config node_tasks/webpack.config.js",
-    "styleguide": "node node_tasks/styleguide/styleguide_task.js"
+    "prod": "NODE_ENV=production node node_tasks/index.js & NODE_ENV=production webpack --watch --config node_tasks/webpack.config.js"
   },
   "dependencies": {
     "jquery": "^3.1.1",
@@ -33,7 +31,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "sc5-styleguide": "^1.5.0",
     "webpack": "^1.13.1"
   },
   "author": "",
